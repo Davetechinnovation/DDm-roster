@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ .container{
+    background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.content{
+    margin-left: 300px;
+  
+}
+
+.content h1{
+    font-size: 4em;
+    transform: translate(50px, 300px);
+}
+
+.note-p{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.h4-p{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+    margin-left: 80px;
+}
+
+.all{
+   margin-top: 320px;
+   font-size: 1.7em;
+   margin-left: 100px;
+   
+}
+
+b{
+    margin-left: 200px;
+   position: relative;
+   top: 20px;
+   font-size: 1.9em;
+}
+
+.button{
+  margin: 30px 350px;
+    padding: 17px;
+    background: linear-gradient(to right, #4CA1AF, blue);
+    max-width: 200px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+    transform: scale(1.1); 
+    background-color: white,;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    right: -20px;
+}
+
+.timetable th{
+    border: 1px solid skyblue; 
+    padding: 8px ; 
+    text-align: left; 
+    font-size: 2.5em;
+}
+
+.timetable td{
+    border: 1px solid skyblue; 
+    padding: 8px ; 
+    text-align: left; 
+    width: 130px;
+    font-size: 2.5em;
+ } 
+
+
+ .timetable table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    box-shadow: 0 0 30px skyblue;
+    
+    
+}
+
+
+.roster {
+    margin-top: 20px; 
+    background-color: black;
+    color: gold;
+    padding-top: 400px;
+    
+}
+
+.roster h3 {
+    text-align: center;
+    
+    font-size: 3em;
+}
+
+
+.roster-list table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    margin-top: 20px;
+    box-shadow: 0 0 20px gold;
+    
+}
+
+.roster-list th, .roster-list td {
+    border: 2px solid gold; 
+    padding: 8px; 
+    text-align: left; 
+    border-radius: 10px;
+    font-size: 3em;
+}
+
+.roster-list td {
+    width: 130px;
+}
+
+.ro {
+    position: relative;
+    top: -150px;
+}
+
+
+ .mo{
+    position: fixed;
+    top: -200px;
+    width: 100%;
+    height: 150vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+    padding-top: 500px;
+    font-size: 2.5em;
+    color: skyblue;
+    font-weight: bolder;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out, transform 0.6s ease-in-out;
+    transform: translateX(-100%);
+}
+.mo.show {
+    opacity: 1; 
+    visibility: visible; 
+    pointer-events: auto; 
+    display: block;
+    transform: translateX(0);
+
+}
+
+.hamburge{
+    position: relative;
+    top: -700px;
+    right: -1100px;
+    cursor: pointer;
+}
+
+
+
+.mo li {
+    list-style: none;
+    padding-bottom: 30px;
+   margin-left: 400px;
+}
+
+.mo p{
+    position: relative;
+    right: -600px;
+    top: -80px;
+}
+
+
+.th{
+    position: fixed;
+    top: -200px;
+    width: 100%;
+    height: 150vh;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+    padding-top: 500px;
+    font-size: 2.5em;
+    color: skyblue;
+    font-weight: bolder;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out, transform 0.6s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.th.sho {
+    opacity: 1; 
+    visibility: visible; 
+    pointer-events: auto; 
+   
+    transform: translateX(0);
+}
+
+
+
+.th li {
+    list-style: none;
+    padding-bottom: 30px;
+   margin-left: 400px;
+}
+
+.th p{
+    position: relative;
+    right: -630px;
+    top: -80px;
+}
+
+.hamburger{
+    position: relative;
+    top: -700px;
+    right: -1100px;
+    cursor: pointer;
+   
+}
+
+
+.shuffule{
+    padding: 4px;
+    position: relative;
+    top: -65px;
+    right: -690px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.shuffule:hover{
+    transform: scale(1.1); 
+    background-color: white,;
+}
+
+.shuffule img{
+    width: 40px;
+}
+
+ table button{
+    text-decoration: none;
+    color: gold;
+    padding: 20px;
+    width: 63%;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 0.6em;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30px;
+ }
+
+ table button:hover {
+    background-color: blue;
+}
+
+
+ .cont{
+    position: relative;
+    top: 50px;
+    right: -605px;
+    padding: 20px;
+    background: gold;
+    max-width: 200px;
+    border-radius: 10px;
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.cont:hover{
+    transform: scale(1.1); 
+    background-color: white,;
+}
+
+.cont a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    margin-left: 20px;
+}
+
+
+
+@media(max-width: 768px) {
+    .container {
+        background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+        height: 30vh;
+        width: 100%; /* Full width for smaller screens */
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .content{
+        margin-left: 100px;
+      margin: -200px 0px;
+    }
+    
+    .content h1{
+        font-size: 1.4em;
+        transform: translate(10px, 300px);
+        position: relative;
+       left: 55px;
+    }
+    
+    .note-p{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        position: relative;
+        left: 100px;
+        width: 500px;
+    }
+    
+    .h4-p{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 20px;
+        width: 550px;
+        position: relative;
+        left: 50px;
+    }
+    
+    .all{
+       margin-top: 320px;
+       font-size: 0.8em;
+       position: relative;
+       left: -150px;
+      
+    }
+    
+    b{
+        margin-left: 200px;
+       position: relative;
+       top: 10px;
+       right: 80px;
+       font-size: 0.7em;
+    }
+    
+    .button{
+        margin: 30px 140px;
+        padding: 2px;
+        background: linear-gradient(to right, #4CA1AF, blue);
+        width: 130px;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        font-size: 0.7em;
+    }
+    
+    .button:hover{
+        transform: scale(1.1); 
+        background-color: white,;
+    }
+    
+    .button a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        position: relative;
+        right: -20px;
+    }
+    
+    .timetable th{
+        border: 1px solid skyblue; 
+        padding: 8px ; 
+        text-align: left; 
+        font-size: 2.5em;
+    }
+    
+    .timetable td{
+        border: 1px solid skyblue; 
+        padding: 8px ; 
+        text-align: left; 
+        width: 130px;
+        font-size: 0.7em;
+     } 
+    
+    
+     .timetable table {
+        width: 50%;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        box-shadow: 0 0 30px skyblue;
+        
+        
+    }
+
+
+    .roster {
+        margin-top: 20px; 
+        background-color: black;
+        color: gold;
+        padding-top: 400px;
+        width: 100%;
+    }
+    
+    .roster h3 {
+        text-align: center;
+        
+        font-size: 2em;
+    }
+    
+    
+    .roster-list table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto; 
+        margin-top: 20px;
+        box-shadow: 0 0 20px gold;
+        
+    }
+    
+    .roster-list th, .roster-list td {
+        border: 2px solid gold; 
+        padding: 8px; 
+        text-align: left; 
+        border-radius: 10px;
+        font-size: 1em;
+    }
+    
+    .roster-list td {
+        width: 130px;
+    }
+    
+    .ro {
+        position: relative;
+        top: -150px;
+    }
+    
+    
+     .mo{
+        position: fixed;
+        top: 350px;
+        width: 100%;
+        font-size: 1em;
+
+    }
+    .mo.show {
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto; 
+        display: block;
+        transform: translateX(0);
+    
+    }
+    
+    .hamburge{
+        position: relative;
+        top: -350px;
+        right: -120px;
+        cursor: pointer;
+    }
+    
+    .hamburge img{
+        width: 80px;
+    }
+    
+    .mo li {
+        list-style: none;
+        padding-bottom: 30px;
+       margin-left: 10px;
+    }
+    
+    .mo p{
+        position: relative;
+        right: -100px;
+        top: -50px;
+    }
+    
+    
+    .th{
+        position: fixed;
+        top: 350px;
+        width: 100%;
+        font-size: 1em;
+    }
+    
+    .th.sho {
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto; 
+       
+        transform: translateX(0);
+    }
+    
+    .hamburger img{
+        width: 80px;
+    }
+    
+    .th li {
+        list-style: none;
+        padding-bottom: 30px;
+       margin-left: 10px;
+    }
+    
+    .th p{
+        position: relative;
+        right: -100px;
+        top: -50px;
+    }
+    
+    .hamburger{
+        position: relative;
+        top: -350px;
+        right: -120px;
+        cursor: pointer;
+       
+    }
+
+
+    
+    .shuffule{
+        padding: 2px;
+        position: relative;
+        top: -45px;
+        right: -190px;
+        cursor: pointer;
+        background-color: transparent;
+        transition: background-color, 0.3s ease-in-out;
+    }
+    
+    
+    .shuffule:hover{
+        transform: scale(1.1); 
+        background-color: white,;
+    }
+    
+    .shuffule img{
+        width: 40px;
+    }
+    
+     table button{
+        text-decoration: none;
+        color: gold;
+        padding: 10px;
+        width: 63%;
+        background-color: transparent;
+        border-radius: 10px;
+        font-size: 0.6em;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 30px;
+     }
+    
+     table button:hover {
+        background-color: blue;
+    }
+    
+    .cont{
+        position: relative;
+        top: 50px;
+        right: -115px;
+        padding: 10px;
+        background: gold;
+        max-width: 180px;
+        border-radius: 10px;
+        transition: background-color, 0.3s ease-in-out;
+    }
+     
+    
+    .cont:hover{
+        transform: scale(1.1); 
+        background-color: white,;
+    }
+    
+    .cont a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        margin-left: 20px;
+    }
+    
+    
+}

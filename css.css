@@ -1,0 +1,268 @@
+@media(max-width: 768px) {
+
+    
+
+    .container{
+        background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+        height: auto;
+        width: 480px;
+    }
+    
+    .content{
+        line-height: 25px;
+        position: relative;
+        top: -170px;
+        left: -10px;
+        margin-left: 108px;
+        width: 900px;
+       
+    }
+    
+    .content h1{
+        font-size: 2em;
+       position: relative;
+       top: 300px;
+       left: -25px;
+       width: 1000px;
+    }
+    
+    .note-p{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        position: relative;
+        left: -145px;
+        width: 1000px;
+    }
+    
+    .h4-p{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding-bottom: 20px;
+        position: relative;
+        right: 45px;
+    }
+    
+    .all{
+       margin-top: 320px;
+       font-size: 1em;
+       margin-left: 70px;
+       
+    }
+    
+    b{
+       margin-left: 1px;
+       position: relative;
+       bottom: -20px;
+       left: -30px;
+       font-size: 1.3em;
+       
+    }
+    
+    .button{
+        position: relative;
+        top: 50px;
+        right: -60px;
+        padding: 3px;
+        background: linear-gradient(to right, #4CA1AF, blue);
+        max-width: 169px;
+        border-radius: 10px;
+        
+    }
+    
+    .timetable th{
+        border: 1px solid skyblue; 
+        padding: 5px ; 
+        text-align: left; 
+        border-radius: 10px;
+    }
+    
+    .timetable td{
+        border: 1px solid skyblue; 
+        padding: 5px ; 
+        text-align: left; 
+        border-radius: 10px;
+        font-size: 0.88em;
+       
+       
+     } 
+    
+    
+     .timetable table {
+        margin-left: 10px;
+        margin-top: 25px;
+        box-shadow: 0 0 20px skyblue;
+
+        
+    }
+    .roster {
+        margin-top: 20px; 
+        margin-left: 2px;
+        background: black;
+        color: gold;
+        padding-bottom: 30px;
+        padding: 20px; 
+        padding-top: 300px;
+        width: 100%;
+    }
+    
+    .roster h3 {
+        text-align: center;
+        font-size: 1.65em;
+    }
+    
+    
+    .roster-list table {
+        width: 100%;
+        margin: 0 auto; 
+        margin-top: 20px;
+        box-shadow: 0 0 20px gold;
+    }
+    
+    .roster-list th, .roster-list td {
+        border: 1px solid gold; 
+        padding: 8px; 
+        text-align: left; 
+        border-radius: 10px;
+        font-size: 1.5em;
+    }
+    
+     
+     .mo{
+        position: fixed;
+        top: -20px;
+        left: -390px;
+        width: 900px;
+        font-size: 1.1em;
+        background-color: transparent;
+        color: white;
+        backdrop-filter: blur(100px);
+    }
+    .mo.show {
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto; 
+        transform: translateX(20px);
+    
+    }
+    
+    .hamburge{
+        position: relative;
+        top: -380px;
+        right: -650px;
+    }
+
+    .hamburge img{
+        width: 70px;
+        height: 60px;
+        border-radius: 50px;
+    }
+    
+    
+    
+    
+    .mo p{
+        position: relative;
+        right: -510px;
+        top: -60px;
+    }
+    
+    
+    .th{
+        top: -20px;
+        left: -400px;
+        width: 1000px;
+        font-size: 1.1em;
+        color: rgb(255, 255, 255);
+        transform: translatey(-100%);
+        
+    }
+    
+     .th.sho{
+        transform: translateX(20px);
+     }
+    
+    .th p{
+        position: relative;
+        right: -520px;
+        top: -55px;
+    }
+    
+    .hamburger {
+        position: relative;
+        top: -410px;
+        right: -370px;
+       
+    }
+
+
+     .hamburger img{
+    width: 70px;
+    height: 60px;
+    border-radius: 50px;
+   }
+     
+    
+    .shuffule{
+        padding: 4px;
+        position: relative;
+        top: -40px;
+        right: -200px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .shuffule img{
+        width: 40px;
+    }
+    
+    
+     table button{
+        text-decoration: none;
+        color: gold;
+        padding: 5px;
+        width: 60%;
+        background-color: transparent;
+        border-radius: 10px;
+        font-size: 0.6em;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        
+     }
+    
+     table button:hover {
+        background-color: blue;
+    }
+    
+    
+     .cont{
+        position: relative;
+        top: 60px;
+        right: -150px;
+        padding: 10px;
+        background: gold;
+        max-width: 160px;
+        border-radius: 10px;
+    
+    }
+    
+    .cont a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        margin-left: 5px;
+    }
+    
+
+
+}
+
+
+@media(max-width: 480px) {
+    .container{
+        background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+        height: auto;
+        width: 100%;
+    }
+}
